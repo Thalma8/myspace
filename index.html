@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nano Folio - Simple HTML Template</title>
+	<title>Thalma's space</title>
 	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
 	<link href="css/magnific-popup.min.css" rel="stylesheet">
@@ -25,6 +25,19 @@ https://www.tooplate.com/view/2122-nano-folio
 		color: #bebebe;
 		font-family: 'Press Start 2P', cursive;
 	}
+	  /* Styles for screens with a maximum width of 768px (tablets and smaller) */
+	  @media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+
+  /* Styles for screens with a maximum width of 480px (mobile devices) */
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px; /* Adjust font size for even smaller screens */
+    }
+  }
 	.blue-line{
 		color:#00FFFF
 	}
@@ -84,15 +97,22 @@ https://www.tooplate.com/view/2122-nano-folio
             white-space: pre;
             font-family: monospace;
         }
+		
 </style>
 
 </head>
 <body>
 	<div class="tm-container-fluid">
+		<div class="ball" style="display: flex; align-items: center;">
+			<h5 style="margin-right: 100px; margin-left: 150px;">about me</h5>
+			<h5 style="margin-right: 100px;">projects</h5>
+			<h5 style="margin-right: 100px;">cv</h5>
+			<h5>contact me</h5>
+		  </div>
 		<section class="tm-site-header tm-flex-center tm-mb-50 tm-bgcolor-1 tm-border-rounded">
 			<!-- <i class="fas fa-heart fa-3x"></i> -->
 			<div>
-			  <h2>Hello, Explore the world of technology with me ................................................. :)</h2><br>
+			  <h2>Hello, Explore the world of technology with me :-)</h2><br>
 			  <h1></h1>
 			  <h1> I am THALMA THANDIE</h1>
 			  <p>Welcome to my page!</p>
@@ -100,6 +120,10 @@ https://www.tooplate.com/view/2122-nano-folio
 			</div>
 
 		  </section>
+	
+
+		  
+		
 		  
 
 		<section class="tm-about tm-mb-80 tm-p-50 tm-bgcolor-2 tm-border-rounded">
@@ -113,16 +137,17 @@ https://www.tooplate.com/view/2122-nano-folio
 				<p class="tm-mb-0">Please support Tooplate website by telling your friends about it. That is going to be very helpful for us. Feel free to <a rel="nofollow" href="https://www.tooplate.com/contact" target="_blank">message us</a> via email or live chat if you have anything to say.</p>
 			</div>
 		</section>
+		
 		<div class = "embed-container">
-			<h5> take a look at my CV _+_</h5>
+			<h5> More about me ....</h5>
 		<embed src="THALMA THANDIE...pdf" type="application/pdf" width="100%" height="600px" />
 	</div>
 		<div class="tm-gallery-section tm-mb-80">
 			<h3 style="color:rgb(95, 248, 6)"> PROJECTS, PROJECTS and more PROJECTS...</h3>
 			<ul class="filters-button-group tm-mb-40">
-				<li><a href="#" data-filter=".city">City</a></li>
-				<li><a href="#" data-filter=".nature">Nature</a></li>
-				<li><a href="#" data-filter=".portraits">Portraits</a></li>
+				<li><a href="#" data-filter=".city">Data Science</a></li>
+				<li><a href="#" data-filter=".nature">Figma</a></li>
+				<li><a href="#" data-filter=".portraits">Web</a></li>
 				<li><a href="#" class="active" data-filter="*">Show All</a></li>
 			</ul>
 			<div class="tm-gallery">				
