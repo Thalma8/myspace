@@ -7,7 +7,9 @@
 	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
 	<link href="css/magnific-popup.min.css" rel="stylesheet">
-    <link href="css/tooplate-style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+	<link href="css/tooplate-style.css" rel="stylesheet">
 <!--
 
 Tooplate 2122 Nano Folio
@@ -15,18 +17,98 @@ Tooplate 2122 Nano Folio
 https://www.tooplate.com/view/2122-nano-folio
 
 -->
+
+<style>
+	/* Custom Theme Styles */
+	body {
+		background-color: #000;
+		color: #bebebe;
+		font-family: 'Press Start 2P', cursive;
+	}
+	.blue-line{
+		color:#00FFFF
+	}
+	.tm-bgcolor-1 {
+		background-color: #000;
+		color: #bebebe;
+	}
+	.tm-bgcolor-2 {
+		background-color: #000;
+		color: #bebebe;
+	}
+	.tm-bgcolor-3 {
+		background-color: #000;
+		color: #00FFFF;;
+	}
+	.tm-footer {
+		color: #bebebe;
+	}
+	.tm-button {
+		background-color: #000;
+		color: #bebebe;
+	}
+	.tm-link-gray {
+		color: #bebebe;
+	}
+	.tm-link-white {
+		color: #bebebe;
+	}
+	.tm-social-link i {
+		color: #bebebe;
+	}
+	.tm-social-link:hover i.fa-facebook {
+		color: #bebebe;
+	}
+	.tm-social-link:hover i.fa-twitter {
+		color: #bebebe;
+	}
+	.tm-social-link:hover i.fa-instagram {
+		color: #bebebe;
+	}
+	.filters-button-group li a.active {
+		color: #bebebe;
+	}
+	.tm-contact-info {
+		color: #bebebe;
+	}
+	.tm-text-white {
+		color: #bebebe;
+	}
+	.tm-btn-submit {
+		color: #bebebe;
+	}
+	.tm-btn-submit:hover {
+		color: #443c3c;
+	}
+	.typing-effect {
+            white-space: pre;
+            font-family: monospace;
+        }
+</style>
+
 </head>
 <body>
 	<div class="tm-container-fluid">
 		<section class="tm-site-header tm-flex-center tm-mb-50 tm-bgcolor-1 tm-border-rounded">
-			<i class="fas fa-heart fa-3x"></i>
-			<h1>Nano Folio</h1>
+		  <!-- <i class="fas fa-heart fa-3x"></i> -->
+		  <div>
+		  <h2>Hello, I am ..</h2><br>
+		  <h1>Thalma Thandie</h1>
+		  <p> A passionate developer</p>
+		  <h3 class="blue-line"><i>WELCOME TO MY SPACE :)</i></h3>
+		</div>
+		  <div class="tm-button-container">
+			<a href="#about" class="tm-button">About</a>
+			<a href="#cv" class="tm-button">CV</a>
+			<a href="#projects" class="tm-button">Projects</a>
+		  </div>
 		</section>
 
 		<section class="tm-about tm-mb-80 tm-p-50 tm-bgcolor-2 tm-border-rounded">
 			<div class="tm-about-header tm-flex-center">
 				<i class="fas fa-users fa-2x"></i>
 				<h2>About Us</h2>
+				
 			</div>
 			<div class="tm-about-text">
 				<p class="tm-mb-40">Nano Folio is simple HTML template with a minimal very light-weight custom CSS file. Max content width is 940 pixels. You can easily change the width or any part in this template. Gallery comes with a pop-up image and simple categories.</p>
@@ -170,6 +252,36 @@ https://www.tooplate.com/view/2122-nano-folio
 				  gallery: { enabled: true }
 			});
 		});
+		function typeEffect(element, speed) {
+  const text = element.textContent;
+  element.textContent = "";
+
+  let i = 0;
+  const timer = setInterval(function () {
+    if (i < text.length) {
+      if (text.charAt(i) === "@") {
+        // If the character is "@" symbol, create a link
+        const link = document.createElement("a");
+        link.href = "https://example.com"; // Replace with the appropriate URL
+        link.textContent = "Link Text"; // Replace with the desired link text
+        element.appendChild(link);
+      } else {
+        // If not "@" symbol, add the character as normal
+        element.textContent += text.charAt(i);
+      }
+      i++;
+    } else {
+      clearInterval(timer);
+    }
+  }, speed);
+}
+
+window.onload = function () {
+  const divToType = document.querySelector(".tm-site-header");
+  typeEffect(divToType, 100); // Adjust the speed as desired (in milliseconds)
+};
+
+
 	</script>
 </body>
 </html>
