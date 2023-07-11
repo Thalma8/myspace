@@ -5,168 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Thalma's space</title>
 	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+	<!-- https://fonts.google.com/  -->
 	<link href="css/magnific-popup.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
 	<link href="css/tooplate-style.css" rel="stylesheet">
-<!--
 
-Tooplate 2122 Nano Folio
+	
 
-https://www.tooplate.com/view/2122-nano-folio
-
--->
-
-<style>
-	/* Custom Theme Styles */
-	body {
-		background-color: #000;
-		color: #bebebe;
-		font-family: 'Press Start 2P', cursive;
-	}
-	  /* Styles for screens with a maximum width of 768px (tablets and smaller) */
-	  @media (max-width: 768px) {
-    body {
-      font-size: 14px; /* Adjust font size for smaller screens */
-    }
-  }
-
-  /* Styles for screens with a maximum width of 480px (mobile devices) */
-  @media (max-width: 480px) {
-    body {
-      font-size: 12px; /* Adjust font size for even smaller screens */
-    }
-  }
-	.blue-line{
-		color:#00FFFF
-	}
-	.tm-bgcolor-1 {
-		background-color: #000;
-		color: #bebebe;
-	}
-	.tm-bgcolor-2 {
-		background-color: #000;
-		color: #bebebe;
-	}
-	.tm-bgcolor-3 {
-		background-color: #000;
-		color: #00FFFF;;
-	}
-	.tm-footer {
-		color: #bebebe;
-	}
-	.tm-button {
-		background-color: #000;
-		color: #bebebe;
-	}
-	.tm-link-gray {
-		color: #bebebe;
-	}
-	.tm-link-white {
-		color: #bebebe;
-	}
-	.tm-social-link i {
-		color: #bebebe;
-	}
-	.tm-social-link:hover i.fa-facebook {
-		color: #bebebe;
-	}
-	.tm-social-link:hover i.fa-twitter {
-		color: #bebebe;
-	}
-	.tm-social-link:hover i.fa-instagram {
-		color: #bebebe;
-	}
-	.filters-button-group li a.active {
-		color: #bebebe;
-	}
-	.tm-contact-info {
-		color: #bebebe;
-	}
-	.tm-text-white {
-		color: #bebebe;
-	}
-	.tm-btn-submit {
-		color: #bebebe;
-	}
-	.tm-btn-submit:hover {
-		color: #443c3c;
-	}
-	.typing-effect {
-            white-space: pre;
-            font-family: monospace;
-        }
-		
-</style>
 <script src="js/jquery.min.js"></script>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/isotope.pkgd.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script>
-		$(function(){
-		  	// Init the image gallery
-		  	var $gallery = $(".tm-gallery").isotope({
-		    	itemSelector: ".tm-gallery-item",
-		    	layoutMode: "fitRows"
-		  	});
-		  
-		  	// Layout Isotope after each image loads
-		  	$gallery.imagesLoaded().progress(function() {
-		    	$gallery.isotope("layout");
-		  	});
-
-		  	$(".filters-button-group").on("click", "a", function(e) {
-		  		e.preventDefault();
-			    var filterValue = $(this).attr("data-filter");
-			    $gallery.isotope({ filter: filterValue });
-			    $('.filters-button-group a').removeClass('active');
-			    $(this).addClass('active');
-			});
-
-		  	// Magnific Pop up
-		  	$('.tm-gallery').magnificPopup({
-		  		delegate: 'a',
-			  	type: 'image',
-				  gallery: { enabled: true }
-			});
-		});
-		function typeEffect(element, speed) {
-  const text = element.textContent;
-  element.textContent = "";
-
-  let i = 0;
-  const timer = setInterval(function () {
-    if (i < text.length) {
-      if (text.charAt(i) === "@") {
-        // If the character is "@" symbol, create a link
-        const link = document.createElement("a");
-        link.href = "https://example.com"; // Replace with the appropriate URL
-        link.textContent = "Link Text"; // Replace with the desired link text
-        element.appendChild(link);
-      } else {
-        // If not "@" symbol, add the character as normal
-        element.textContent += text.charAt(i);
-      }
-      i++;
-    } else {
-      clearInterval(timer);
-    }
-  }, speed);
-
-  // Show the element after typing animation begins
-  element.style.visibility = "visible";
-}
-
-window.onload = function () {
-  const divToType = document.querySelector(".tm-site-header");
-  divToType.style.visibility = "hidden"; // Hide the element initially
-  typeEffect(divToType, 70); // Adjust the speed as desired (in milliseconds)
-};
-
-
-
-	</script>
+	<script src="js\index.js"></script>
 
 </head>
 <body>
@@ -175,44 +26,38 @@ window.onload = function () {
 			<h5 style="margin-right: 100px; margin-left: 150px;">about me</h5>
 			<h5 style="margin-right: 100px;">projects</h5>
 			<h5 style="margin-right: 100px;">cv</h5>
-			<h5>contact me</h5>
+			<h5>contact me</h5><br>
+	
 		  </div>
 		<section class="tm-site-header tm-flex-center tm-mb-50 tm-bgcolor-1 tm-border-rounded">
 			<!-- <i class="fas fa-heart fa-3x"></i> -->
 			<div>
-			  <h2>Hello, Explore the world of technology with me :-)</h2><br>
+			  <h2> . . .Hello World, Explore the world of technology with me :-)</h2><br>
 			  <h1></h1>
-			  <h1> I am THALMA THANDIE</h1>
+			  <h1> I am THALMA THANDIE </h1>
 			  <p>Welcome to my page!</p>
 			  <h3 class="blue-line"><i></i></h3>
 			</div>
 
 		  </section>
-	
 
-		  
-		
-		  
 
 		<section class="tm-about tm-mb-80 tm-p-50 tm-bgcolor-2 tm-border-rounded">
 			<div class="tm-about-header tm-flex-center">
 				<!-- <i class="fas fa-users fa-2x"></i> -->
-				<h2>About <br> <br>Thalma>>>></h2>
+				<h2 style="color:rgb(95, 248, 6)">About <br> <br>Thalma..</h2>
 				
 			</div>
 			<div class="tm-about-text">
-				<p class="tm-mb-40">Nano Folio is simple HTML template with a minimal very light-weight custom CSS file. Max content width is 940 pixels. You can easily change the width or any part in this template. Gallery comes with a pop-up image and simple categories.</p>
-				<p class="tm-mb-0">Please support Tooplate website by telling your friends about it. That is going to be very helpful for us. Feel free to <a rel="nofollow" href="https://www.tooplate.com/contact" target="_blank">message us</a> via email or live chat if you have anything to say.</p>
+				<p class="tm-mb-40">I am a software developer, with experience in python development and a passion for data Science and machine learning.</p>
+				<p class="tm-mb-0">reach out to me for development of websites and anything else <a rel="nofollow" href="https://www.tooplate.com/contact" target="_blank">message me</a> via email or live chat if you have anything to say.</p>
 			</div>
 		</section>
 		
-		<div class = "embed-container">
-			<h5> More about me ....</h5>
-		<embed src="THALMA THANDIE...pdf" type="application/pdf" width="100%" height="600px" />
-	</div>
+
 		<div class="tm-gallery-section tm-mb-80">
 			<h3 style="color:rgb(95, 248, 6)"> PROJECTS, PROJECTS and more PROJECTS...</h3>
-			<ul class="filters-button-group tm-mb-40">
+			<ul class="filters-button-group">
 				<li><a href="#" data-filter=".city">Data Science</a></li>
 				<li><a href="#" data-filter=".nature">Figma</a></li>
 				<li><a href="#" data-filter=".portraits">Web</a></li>
@@ -309,9 +154,13 @@ window.onload = function () {
 		        </form>    
 			</div>
 		</section>
+		<div class = "embed-container">
+			<h5> More about me ....</h5>
+		<embed src="THALMA THANDIE...pdf" type="application/pdf" width="100%" height="600px" />
+	</div>
 
 		<footer class="tm-footer">
-			Copyright 2020 Nano Folio - Design: <a rel="sponsored" href="https://www.tooplate.com" class="tm-link-gray">Tooplate</a>
+			designed by Thalma Thandie <a rel="sponsored" href="www.google.com" class="tm-link-gray"></a>
 		</footer>
 	</div>
 
